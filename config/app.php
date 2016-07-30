@@ -11,7 +11,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Madison'),
+    'name' => env('APP_NAME', 'Platform of the People'),
 
     /*
     |--------------------------------------------------------------------------
@@ -91,7 +91,7 @@ return [
 
     'key' => env('APP_KEY', 'SomeRandomString'),
 
-    'cipher' => MCRYPT_RIJNDAEL_256,
+    'cipher' => 'AES-256-CBC',
 
     /*
     |--------------------------------------------------------------------------
@@ -106,7 +106,8 @@ return [
     |
     */
 
-    'log' => env('APP_LOG', 'single'),
+    'log' => 'errorlog',
+
 
     /*
     |--------------------------------------------------------------------------
