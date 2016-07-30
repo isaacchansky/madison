@@ -54,11 +54,12 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => env('DB_HOST', 'localhost'),
-            'database'  => env('DB_DATABASE', 'forge'),
-            'username'  => env('DB_USERNAME', 'forge'),
-            'password'  => env('DB_PASSWORD', ''),
+            'host'      => env('DB_HOST', '127.0.0.1'),
+            'database'  => env('DB_DATABASE', 'citizenignite'),
+            'username'  => env('DB_USERNAME', 'root'),
+            'password'  => env('DB_PASSWORD', 'root'),
             'charset'   => 'utf8',
+            'unix_socket'   => '/Applications/MAMP/tmp/mysql/mysql.sock',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
             'strict'    => false,
@@ -66,11 +67,12 @@ return [
 
         'mysql_testing' => [
             'driver'    => 'mysql',
-            'host'      => env('DB_HOST', 'localhost'),
-            'database'  => 'madison_testing',
+            'host'      => env('DB_HOST', '127.0.0.1'),
+            'database'  => 'citizenignite_testing',
             'username'  => env('DB_USERNAME', 'root'),
-            'password'  => env('DB_PASSWORD', ''),
+            'password'  => env('DB_PASSWORD', 'root'),
             'charset'   => 'utf8',
+            'unix_socket'   => '/Applications/MAMP/tmp/mysql/mysql.sock',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
             'strict'    => false,
@@ -78,7 +80,7 @@ return [
 
         //'pgsql' => [
         //    'driver'   => 'pgsql',
-        //    'host'     => env('DB_HOST', 'localhost'),
+        //    'host'     => env('DB_HOST', '127.0.0.1'),
         //    'database' => env('DB_DATABASE', 'forge'),
         //    'username' => env('DB_USERNAME', 'forge'),
         //    'password' => env('DB_PASSWORD', ''),
@@ -89,7 +91,7 @@ return [
 
         //'sqlsrv' => [
         //    'driver'   => 'sqlsrv',
-        //    'host'     => env('DB_HOST', 'localhost'),
+        //    'host'     => env('DB_HOST', '127.0.0.1'),
         //    'database' => env('DB_DATABASE', 'forge'),
         //    'username' => env('DB_USERNAME', 'forge'),
         //    'password' => env('DB_PASSWORD', ''),

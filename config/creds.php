@@ -8,11 +8,11 @@
 */
 
 $creds = array(
-  'database'        => 'madison',
+  'database'        => 'citizenignite',
   'username'        => 'root',
   'password'        => 'root',
-  'admin_email'     => 'seth@opengovfoundation.org',
-  'admin_fname'     => 'Seth',
-  'admin_lname'     => 'Etter',
-  'admin_password'  => 'Password1'
+  'admin_email'     => 'ichansky@gmail.com',
+  'admin_fname'     => 'Isaac',
+  'admin_lname'     => 'Chansky',
+  'admin_password'  => 'topsecret'
 );
