@@ -17,7 +17,7 @@ class DocumentsTableSeeder extends Seeder
         $credentials = array('email' => $adminEmail, 'password' => $adminPassword);
         Auth::attempt($credentials);
         $admin = Auth::user();
-        $group = Group::where('id', '=', 1)->first();
+        $group = Group::where('name', '=', 'Admin Group')->first();
 
         // Create first doc
 

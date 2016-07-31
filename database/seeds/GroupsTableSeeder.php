@@ -10,7 +10,7 @@ class GroupsTableSeeder extends Seeder
     {
         $group = new Group();
         $group->status = Group::STATUS_ACTIVE;
-        $group->name = 'Example Group';
+        $group->name = 'Admin Group';
         $group->display_name = 'Example Group Display';
         $group->address1 = '1234 Somewhere';
         $group->city = 'City';
