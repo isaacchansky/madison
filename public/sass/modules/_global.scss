@@ -4,10 +4,6 @@
 
 $web-fonts-protocol: 'https';
 
-// Fonts are now in mixins/fonts
-// @include web-fonts("Patua One", ("Open Sans": ("300", "300 italic", "700")),
-//     ("Libre+Baskerville": ("300", "300 italic")));
-
 // Fix our baselines.
 html {
     // Reset font size.
@@ -25,6 +21,7 @@ body, .normal-text {
 
 h1, h2, .large-heading {
     font-size: 3.25rem;
+    font-weight: 700;
     line-height: 2 * $line-height-computed;
     margin-top: 0rem;
     margin-bottom: $line-height-computed;
@@ -86,7 +83,7 @@ h1,h2,h3,h4,h5,h6,.normal-title {
 }
 
 .title-underline-thick {
-    padding-bottom: calc( #{$line-height-computed} - 5px );
+    padding-bottom: calc( #{$line-height-computed} / 2 );
     border-bottom: 10px solid $black;
     margin-bottom: calc( #{$line-height-computed} - 5px );
 }
@@ -95,6 +92,7 @@ h1,h2,h3,h4,h5,h6,.normal-title {
     padding-bottom: calc( #{0.5 * $line-height-computed} - 3px );
     border-bottom: 6px solid $black;
     margin-bottom: calc( #{0.5 * $line-height-computed} - 3px );
+    line-height: 1;
 }
 
 .title-underline-thin {

@@ -51,7 +51,6 @@
     .annotation-group-statistics {
         @extend .fa;
         @extend .fa-comment;
-        font-style: italic;
         margin-left: 10px;
         padding: 0 10px;
         display: inline-block;
@@ -137,7 +136,6 @@
     .close-button {
         float: right;
         font-family: $fancy-font;
-        font-style: italic;
         line-height: (2 * $line-height-computed);
         font-size: 0.85rem;
     }
@@ -198,7 +196,6 @@
 
     .reply-action {
         font-size: 0.75rem;
-        font-style: italic;
     }
 }
 
@@ -239,7 +236,6 @@
     .mobile-annotation-message {
         display: block;
         margin: $line-height-computed 0;
-        font-style: italic;
     }
 
     // Leave room for annotation numbers

@@ -17,7 +17,7 @@ $headline-color: $black !default;
 $text-color: $black !default;
 
 $link-color: $blue !default;
-$link-hover-color: $blue !default;
+$link-hover-color: darken($blue, 10%) !default;
 $link-hover-decoration: underline !default;
 
 
@@ -40,7 +40,7 @@ $font-family-serif: $accent-font !default;
 $navbar-height: $header-height !default;
 $navbar-margin-bottom: 0 !default;
 $navbar-border-radius: 0 !default;
-$border-radius-base: 7px !default;
+$border-radius-base: 2px !default;
 
 
 $nav-tabs-border-color: transparent !default;

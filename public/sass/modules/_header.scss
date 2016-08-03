@@ -37,7 +37,7 @@ header {
 .brand {
     @extend .accent-title;
     line-height: $header-height;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .navbar .brand:hover {

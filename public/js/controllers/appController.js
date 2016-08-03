@@ -30,7 +30,7 @@ angular.module('madisonApp.controllers')
       AuthService.getUser();
 
       if (!AuthService.isAuthenticated()) {
-        prompts.info('Want to help craft legislation?  <a href="/user/signup">Create an account to annotate and comment &raquo;</a>');
+        prompts.info('Want to help craft policy?  <a href="/user/signup">Create an account to annotate and comment &raquo;</a>');
       }
 
       //Set active group from the account dropdown

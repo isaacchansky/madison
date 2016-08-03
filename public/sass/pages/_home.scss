@@ -92,14 +92,15 @@
 .category {
     display: inline-block;
     list-style: none;
-    $category-height: 1.2rem;
+    $category-height: 1.1rem;
     margin-left: 10px;
     cursor:pointer;
 
     span {
         @extend .small-caps;
         display: inline-block;
-        background-color: $light-grey;
+        background-color: $red;
+        color: $white;
         height: $category-height;
         line-height: $category-height;
         padding-right: 7px;
@@ -109,7 +110,7 @@
     &:before {
         border-top:    $category-height/2 solid transparent;
         border-bottom: $category-height/2 solid transparent;
-        border-right:  $category-height/2 solid $light-grey;
+        border-right:  $category-height/2 solid $red;
         border-left: none;
         width: 0px;
         display: inline-block;
@@ -124,6 +125,7 @@
     float: left;
     display: block;
     width: 100%;
+    box-shadow: $default-box-shadow;
 
     // The 1em here falls back into rhythm with the 1em padding on the boxes.
     margin-bottom: .5 * $line-height-computed;
@@ -143,14 +145,14 @@
 
     .doc-info {
         width: 66.6666%;
-        padding-top: 0;
+        padding-top: .5 * $line-height-computed;
         // This falls into rhythm with the margin-bottom above.
         padding-bottom: .5 * $line-height-computed;
     }
 
     .doc-meta {
         width: 33.3333%;
-        padding-top: 0;
+        padding-top: .5 * $line-height-computed;
         padding-left: $grid-gutter-width/2;
 
         // Make this relative so we can stick the action button to the bottom of it.
@@ -211,13 +213,13 @@
     padding-bottom: $line-height-computed;
     background-color: $lighter-grey;
 
-    .heading {
-        @extend .title-underline-thick;
-        margin-top: .5 * $line-height-computed;
-        padding-bottom: calc( #{ $line-height-computed} - 5px );
-        border-bottom: 10px solid #000;
-        margin-bottom: calc( #{ .5 * $line-height-computed } - 5px );
-    }
+    // .heading {
+    //     @extend .title-underline-thick;
+    //     margin-top: .5 * $line-height-computed;
+    //     padding-bottom: $line-height-computed/2;
+    //     border-bottom: 10px solid #000;
+    //     margin-bottom: $line-height-computed;
+    // }
 
     .subheading {
         @extend .title-underline-medium;
@@ -302,6 +304,7 @@
 .main-feature {
     @include clearfix();
     margin-bottom: $line-height-computed;
+    box-shadow: $default-box-shadow;
 
     .doc-content {
         @extend .col-md-24;
